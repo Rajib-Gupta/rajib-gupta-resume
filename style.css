@@ -351,6 +351,32 @@ body {
   }
 }
 
+/* General page width adjustments */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw; /* Ensure the navbar doesn't exceed the viewport width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
   /* Navbar adjustments for mobile/tablet view */
   .navbar {
