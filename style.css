@@ -511,11 +511,54 @@ body {
   .link-name4 {
     font-size: 24px;
   }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
+/*iphone or mobile view*/
+@media (max-width: 600px) {
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .hire-me {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .link-name1,
+  .link-name2,
+  .link-name3,
+  .link-name4 {
+    font-size: 18px;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu-toggle {
+    font-size: 20px;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+  .logo-header {
+    font-size: 16px;
+    width: 300px;
+  }
+  .job-title {
+    font-size: 12px;
+  }
+
 }
 
 @keyframes navbarSlideIn {
