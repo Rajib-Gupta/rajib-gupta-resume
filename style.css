@@ -518,47 +518,140 @@ body {
   }
 }
 
-/*iphone or mobile view*/
-@media (max-width: 600px) {
+/* iPhone or mobile view */
+@media (max-width: 470px) {
+  .navbar {
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    animation: menuSlideIn 0.5s ease-in-out forwards;
+  }
+  .logo {
+    position: relative;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    animation: menuSlideIn 0.5s ease-in-out forwards;
+  }
+  .logo-header {
+    font-size: 16px;
+    margin-left: 0; /* Avoid unnecessary spacing */
+    position: relative;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    animation: menuSlideIn 0.5s ease-in-out forwards;
+  }
+  /* Reduce profile image size for smaller screens */
   .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
+
+  /* Adjust font size for the name */
   .name {
-    font-size: 20px;
+    font-size: 18px;
   }
+
+  /* Smaller font for description */
   .description {
     font-size: 14px;
+    text-align: center;
+    padding: 0 10px; /* Add padding for better readability */
   }
+
+  /* Smaller button size for "Hire Me" */
   .hire-me {
     font-size: 14px;
     padding: 8px 16px;
+    width: fit-content;
+    margin: 0 auto; /* Center the button */
   }
+
+  /* Adjust link sizes for smaller screens */
   .link-name1,
   .link-name2,
   .link-name3,
   .link-name4 {
-    font-size: 18px;
+    font-size: 16px;
   }
+
+  /* Optimize the contact list layout */
   .contact-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    padding: 0 10px; /* Add horizontal padding */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
   }
+
+  /* Make the menu toggle icon smaller and better positioned */
   .menu-toggle {
     font-size: 20px;
+    top: 10px;
+    right: 10px;
+    position: absolute; /* Ensure it's on the right */
+    z-index: 1000;
   }
+
+  /* Adjust menu link font size for better readability */
   .menu a {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
   }
+
+  /* Ensure the logo and text fit well within smaller screens */
   .logo-header {
     font-size: 16px;
-    width: 300px;
+    width: auto; /* Let it resize dynamically */
+    margin-left: 0; /* Avoid unnecessary spacing */
   }
+
+  /* Adjust job title size */
   .job-title {
     font-size: 12px;
   }
 
+  /* Navbar adjustments for smaller screens */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures proper width calculation */
+    background-color: rgba(247, 247, 247, 0.9);
+  }
+
+  /* Menu should appear as a vertical dropdown */
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Ensure the dropdown menu takes full width */
+  .menu.active {
+    width: 100%;
+    position: absolute;
+    top: 50px; /* Below the navbar */
+    left: 0;
+    background-color: rgba(247, 247, 247, 0.9);
+  }
+
+  /* Adjust margins for elements to fit better on small screens */
+  .link {
+    margin-top: 20px;
+  }
 }
 
 @keyframes navbarSlideIn {
