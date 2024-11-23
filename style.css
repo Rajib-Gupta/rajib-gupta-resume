@@ -663,6 +663,75 @@ body {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin: 0 20px; /* Reduce margin for smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reduce gap between menu items */
+    display: none; /* Initially hidden */
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    margin: 10px 20px;
+    gap: 20px; /* Reduce the gap between the image and text */
+  }
+  .content {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 36px; /* Reduce from 60px */
+  }
+  .description {
+    font-size: 16px;
+  }
+  .hire-me {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .link {
+    flex-direction: column;
+    margin: 20px auto; /* Reduce margin */
+    gap: 20px;
+  }
+  .link-card1, .link-card2, .link-card3, .link-card4 {
+    width: 150px;
+    height: 150px;
+  }
+  .link-name1, .link-name2, .link-name3, .link-name4 {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 90%;
+    margin: 40px auto; /* Reduce margin */
+    padding: 20px;
+  }
+  .contact-description, .contact-list {
+    font-size: 16px; /* Adjust text size */
+  }
+}
 
 @keyframes navbarSlideIn {
   0% {
