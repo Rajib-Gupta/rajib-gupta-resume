@@ -463,7 +463,7 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 50%;
     :hover {
       background-color: rgba(247, 247, 247, 0.829);
@@ -651,13 +651,20 @@ body {
 
   /* Ensure the dropdown menu takes full width */
   .menu.active {
-    width: 100%;
-    position: absolute;
-    top: 50px; /* Below the navbar */
-    left: 0;
-    background-color: rgba(247, 247, 247, 0.9);
+    display: flex;
+    animation: menuDropDown 0.5s ease-in-out forwards;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 50%;
+    :hover {
+      background-color: rgba(247, 247, 247, 0.829);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
   }
-
   /* Adjust margins for elements to fit better on small screens */
   .link {
     margin-top: 20px;
@@ -674,9 +681,74 @@ body {
     align-items: center;
     gap: 10px; /* Reduce gap between menu items */
     display: none; /* Initially hidden */
+    position: relative;
+    top:30px;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7; /* Make background fully opaque */
+    max-height: 700px; /* Set a maximum height for the menu */
+    z-index: 1; /* Ensure menu is above other elements */
+    margin-bottom: 40px;
   }
+
+  .menu.show {
+    display: flex; /* Display the menu when toggled */
+  }
+
+  .menu-item {
+    padding: 10px 20px;
+    width: 100%; /* Ensure each menu item takes full width */
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd; /* Add border to separate menu items */
+  }
+
+  .menu-item:last-child {
+    border-bottom: none; /* Remove border from the last menu item */
+  }
+
   .menu-toggle {
     display: block;
+    cursor: pointer;
+    font-size: 24px;
+    border: none;
+    color: #333;
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    animation: menuSlideIn 0.5s ease-in-out forwards;
+    align-items: center;
+  }
+
+
+  .job-title {
+    font-size: 15px;
+  }
+  .logo-header {
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+  }
+  .logo {
+    font-size: 20px;
+    color: rgb(9, 9, 9);
+    font-weight: 500;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+  }
+
+  @keyframes menuSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
 
