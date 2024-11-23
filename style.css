@@ -360,14 +360,18 @@ body {
     background-color: rgba(247, 247, 247, 0.829);
     opacity: 0;
     animation: navbarSlideIn 1s forwards ease-in-out 0.5s;
-    padding: 10px 20px; /* Adjust padding */
-    box-sizing: border-box; /* Include padding in width calculation */
     position: relative; /* For positioning the toggle */
     overflow: hidden; /* Prevents content from overflowing */
+    
   }
   .logo {
+    font-size: 20px;
+    color: rgb(9, 9, 9);
+    font-weight: 500;
     border-radius: 50%;
     margin: 0;
+    padding: 0;
+    width: 300px;
   }
   /* Logo aligned to the left */
   .logo-header {
@@ -385,7 +389,7 @@ body {
     animation: logoSlideIn 1s forwards ease-in-out 0.5s;
     position: relative;
     left: 0;
-    width: 400px;
+    width: 250px;
   }
   .job-title {
     font-size: 15px;
@@ -395,8 +399,10 @@ body {
     animation: logoSlideIn 1s forwards ease-in-out 0.5s;
     position: relative;
     left: 0;
-    width: 400px;
+    width: 300px;
     margin: 0;
+    padding: 0;
+    text-align: start;
   }
 
   @keyframes logoSlideIn {
@@ -423,6 +429,7 @@ body {
     z-index: 10;
     opacity: 0;
     animation: menuSlideIn 0.5s ease-in-out forwards;
+    align-items: center;
   }
 
   /* Menu to display vertically */
@@ -519,7 +526,7 @@ body {
 }
 
 /* iPhone or mobile view */
-@media (max-width: 470px) {
+@media (max-width: 450px) {
   .navbar {
     padding: 10px;
     width: 100%;
@@ -546,6 +553,9 @@ body {
     z-index: 10;
     opacity: 0;
     animation: menuSlideIn 0.5s ease-in-out forwards;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
   /* Reduce profile image size for smaller screens */
   .profile-image {
