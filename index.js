@@ -12,10 +12,10 @@ const linkCard2 = document.querySelector(".link-card2").addEventListener("click"
   window.location.href = "https://www.linkedin.com/in/rajib-gupta-620206190/";
 });
 const linkCard3 = document.querySelector(".link-card3").addEventListener("click", () => {
-  window.location.href = "https://drive.google.com/file/d/1jUv9ssUjVD4Usfp_WTs6xw296PIRBw8j/view?usp=sharing";
+  window.location.href = "https://drive.google.com/file/d/1mqjYeL0ZZ-vHo3i814uuEaY-eAffOh-O/view?usp=sharing";
 });
 const linkCard4 = document.querySelector(".link-card4");
 
 const hireMe = document.querySelector(".hire-me").addEventListener("click", () => {
-  window.location.href = "https://drive.google.com/file/d/1jUv9ssUjVD4Usfp_WTs6xw296PIRBw8j/view?usp=sharing";
+  window.location.href = "https://drive.google.com/file/d/1mqjYeL0ZZ-vHo3i814uuEaY-eAffOh-O/view?usp=sharing";
 })
